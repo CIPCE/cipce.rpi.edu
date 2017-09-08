@@ -1,0 +1,467 @@
+nav.navbar > .container-fluid >  ul.nav > li > a:hover{ 
+	color: red 
+	/* the specificity here lets me override bootstrap styling (something which I very much want to do ) */
+}
+body {
+	height: 100vh;
+	font-family: Source Sans Pro, sans-serif;
+	text-decoration: none;
+}
+
+nav.navbar {
+	border-color: #424242;
+}
+
+.container > .row{
+	width: 100%;
+	margin-right: 0;
+	padding-right: 0;
+}
+.container > .row > .main-thumbnail {
+	display: inline-block;
+	width:33%;
+	margin:auto; /*this is being weird; i need to figure out how to ensure that it is always centered
+				   an ugly way is to just manipulate the padding to make it centered, 
+				   but that would degrade on anything but desktop browsers.*/
+}
+a.thumbnail {
+	margin-bottom: 0;
+}
+
+
+a, a:link, a:hover {
+	color: #2f4f4f;
+	font-weight: 700;
+}
+
+nav > ul > li > a {
+	color: white;
+	text-decoration: none;
+	font-family: Source Sans Pro, sans-serif;
+	font-weight: 300 !important;
+
+}
+
+#logo-text > a, #logo-text > a:hover, #logo-text > a:link {
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+}
+
+#thumbnails {
+	margin-top: 3%;
+	margin-bottom: 3%;
+
+}
+#top-separator {
+	height: 25px;
+	background-color: #424242;
+}
+
+#top-container {
+	height: 74px;
+	width: 100%;
+	background-color: #e2231b;
+	padding: 1vh 0 1vh 2vw;
+	color: white;
+	font-size: 1.8em;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+#logo-text, #logo-text:hover, #logo-text:link, a#logo-link {
+	margin-top: 13px !important;
+	font-family: Lato, sans-serif;
+	color: white;
+	text-decoration: none !important; 	
+	font-weight: 300;
+	margin-top: 26px;
+	line-height: 0 !important;
+	height: 2.1em;
+}
+.navbar {
+	min-height: 0;
+	max-height: 4vh;
+}
+
+ul.nav:nth-child(2) {
+	padding-left: 0;
+}
+
+#last-nav {
+	margin-bottom: 70px;
+}
+
+
+.row{
+	margin-left: 2px;
+}
+
+div#thumbnails.row {
+	margin-left: 0;
+	padding-right: 0;
+}
+#text-content {
+	background-color: #f8f8f8;
+	font-family: Source Sans Pro, sans-serif;
+	width: 40vw;
+	min-width: 50em;
+}
+.text-container {
+	width: 100%;
+	background-color: #f8f8f8;
+}
+
+#nav-parent, .navbar-nav, nav.navbar > .container-fluid > .navbar-header, nav.navbar, .container-fluid, .navbar-header, ul.nav,  ul.nav > li > a{
+	max-height: 4vh;
+	background-color: #424242;
+	color: white !important; 
+}
+
+ul.nav > li {
+	height: 100%;
+	max-height: 30px;
+
+}
+nav.navbar {
+	padding-left: 0;
+}
+.navbar-nav > li > a {
+	padding: 1vh 1vw 1vh 1vw;
+	font-size: .95em;
+	font-family: Roboto, sans-serif;
+}
+
+
+.navbar-nav > li > a:hover, .navbar-nav > li > .active-nav {
+	background-color: #333 !important ;
+	max-height: 4vh;
+}
+ul.nav{
+	max-height: 4vh !important;
+}
+
+#navbar-parent{
+	width: auto;
+	border-color: #424242;
+}
+#nav-wrapper {
+	width: 100%;
+	background-color: #424242;
+	height: 40px;
+}
+
+.image-container {
+	height: 17vh;
+}
+
+.staff-picture {
+	padding-bottom: 2vh;
+	margin: 1vh auto 0 auto;
+	width: 400px;
+	height: 300px;
+}
+
+.staff-info {
+	width:45vw;
+	margin-top: 3vh;
+}
+#main {
+	height: 42.4vh;
+}
+.staff-info > h4 {
+	padding-top: 2vh;
+}
+
+#selector {
+	width: 100%;
+	height: 20vh;
+	margin-left: -5vw;
+	padding: 1.5vh 1vw 0vh 1vw;
+	display: flex !important;
+	align-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.container {
+	text-align: center;
+}
+
+.container > h3{
+	margin: 2vh 0 0 0;
+
+}
+
+.overlay {
+	order: 1;
+	position: relative;
+	z-index: 10;
+}
+
+
+.project-icon {
+	height: 50px;
+	width: auto;
+	background-color: white;
+	font-size: 1.2em;
+	font-family: Roboto, sans-serif;
+	margin-bottom: 20px;
+	padding-top: 20px;
+
+}
+#project-container {
+	height: auto;
+	width: 100%;
+	background-color: #f8f8f8;
+	padding-bottom: 10vh;
+	margin-top: 100px;
+
+}
+
+
+
+.project {
+	padding: 1vh 2vw 1vh 2vw;
+	text-align: center;
+	width: 80vw;
+	font-size: .85em;
+	max-width: 1100px;
+	margin: auto auto auto auto;
+
+
+}
+
+.scroll-info {
+	height: auto;
+	width: 50vw;
+	margin: 0 auto 0 auto;
+	padding: 2vh 2vw 2vh 2vw;
+	text-align: left;
+	display: block;
+
+}
+
+.scroll-list {
+	position: fixed;
+	top: 15vh;
+	left: 2vw;
+	height: auto;
+	width: 14vw;
+	min-width: 210px;
+	border-right: 1px solid black;
+	margin-top: 4vh;
+	margin-right: 10px;
+}
+
+.scroll-button-container {
+	padding-top: .5vh;
+	padding-left: .25vw;
+	padding-bottom: .5vh;
+}
+
+.scroll-list > ul {
+	margin: 2vh 0 2vh 0;
+	line-height: 3em;
+	font-weight: 400;
+}
+
+.scroll-list > ul > li {
+	cursor: pointer;
+}
+
+#whoweare {
+	width: 50vw;
+}
+
+.staff-title {
+	font-size: 2em;
+	font-weight: 700;
+	margin-top: 7vh;
+}
+
+.staff-info > h3 {
+	margin-top: -.03vh;
+}
+.footer {
+	width: 80%;
+	height: 8vh;
+	color: #2f4f4f;
+	padding-top: 3vh;
+	display: flex;
+	justify-content: space-around;
+	font-size: .9em;
+	margin-bottom: 4vh;
+	margin-top: 2vh;
+
+}
+
+#left-footer {
+	text-align: left;
+	margin-right: 4vw;
+	height: auto;
+}
+
+#right-footer {
+	text-align: right;
+	height: auto;
+}
+
+
+#copyright {
+	font-size: .7em;
+	bottom: 0;
+	width: 25vw;
+	text-align: center;
+	margin-left: -5vw;
+}
+
+.project-picture, .overlay {
+	height: 8vw;
+	width: 8vw;
+	max-width: 160px;
+	min-width: 85px;
+	min-height: 85px;
+}
+
+.project-picture {
+	margin-bottom: -2vw;
+}
+
+.program-link {
+	max-width: 180px;
+	max-height: 90px;
+	width: auto;
+	height: auto;
+	font-size: 1.3em;
+	font-weight: 300;
+	text-align: center;
+	padding: 30px auto 30px auto;
+	margin: 1.5vh auto auto auto;
+	font-family: Source Sans Pro, sans-serif;
+
+}
+
+.inactive-program {
+	background-color: #d3d3d3;
+}
+
+.inactive-program:hover {
+	background-color: grey;
+	color: white;
+}
+
+.active-program {
+	background-color: #ff7f7f;
+	padding-bottom: auto;
+}
+
+.active-program:hover {
+	color: black;
+	background-color: #ff4c4c;
+	cursor: pointer;
+}
+
+.active-program > a:hover {
+	color: black;
+}
+
+
+.scroll-header {
+	margin: 0 auto 2vh auto;
+	width: 40vw;
+}
+
+.scroll-info > .container {
+	text-align: left;
+}
+
+.scroll-info > .container > img {
+	margin-right: 2vw;
+}
+
+.sub-info {
+	height: auto;
+}
+h4 {
+	line-height: 0;
+}
+
+#logo {
+	margin-top: 4px;
+	width: 236px;
+	height: 44px;
+
+}
+
+.project-info > h3 {
+	margin-top: 20vh;
+
+}
+
+.project-info {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.scroll-info > h4 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 3vh 0 3vh -1vw;
+}
+
+.note {
+	color: green;
+	font-weight: 700;
+	font-family: sans-serif;
+}
+
+.main-thumbnail > h4 {
+	margin-top: 2vh;
+}
+
+#index-footer {
+	position: fixed;
+	left: 10%;
+	margin-bottom: 0;
+	bottom: 3vh;
+}
+
+#summer-header {
+	width: 40vw;
+	min-width: 550px;
+}
+
+.header-wrapper {
+	width: 100%;
+	background-color: #d3d3d3;
+	padding-bottom: 10px;
+}
+
+
+#active-nav {
+	background-color: black;
+}
+
+#main {
+	height: auto;
+}
+
+.color-fill {
+	background-color: #ededed;
+	height: 150px;
+	width: 100%;
+}
+
+#logo-text:before {
+	content: 'Center for Initiatives in Pre-College Education'
+}
+
+@media screen and (max-width: 720px) {
+	#logo-text:before {
+		content: 'C I P C E';
+	}
+}

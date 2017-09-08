@@ -1,0 +1,10 @@
+drwx------    3 127617   4000         2048 Mar 03  2017 .
+drwx------    4 127617   4000         2048 Mar 03  2017 ..
+-rw-------    1 127617   4000           43 Aug 15 16:27 blank.gif
+-rw-------    1 127617   4000         3866 Aug 15 16:27 fancybox_loading.gif
+-rw-------    1 127617   4000         1003 Aug 15 16:27 fancybox_overlay.png
+-rw-------    1 127617   4000         1362 Aug 15 16:27 fancybox_sprite.png
+drwx------    2 127617   4000         2048 Mar 03  2017 helpers
+-rw-------    1 127617   4000         4388 Aug 15 16:27 jquery.fancybox.css
+-rw-------    1 127617   4000        49742 Aug 15 16:27 jquery.fancybox.js
+-rw-------    1 127617   4000        22639 Aug 15 16:27 jquery.fancybox.pack.js

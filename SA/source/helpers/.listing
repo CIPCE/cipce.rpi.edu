@@ -1,0 +1,12 @@
+drwx------    4 127617   4000         2048 Mar 03  2017 .
+drwx------    3 127617   4000         2048 Mar 03  2017 ..
+-rw-------    1 127617   4000         7428 Aug 15 16:27 development.html
+-rw-------    1 127617   4000         7954 Aug 15 16:27 educationalresources.html
+-rw-------    1 127617   4000         1080 Aug 15 16:27 fancybox_buttons.png
+drwx------    5 127617   4000         2048 Mar 03  2017 images
+-rw-------    1 127617   4000         2543 Aug 15 16:27 jquery.fancybox-buttons.css
+-rw-------    1 127617   4000         3163 Aug 15 16:27 jquery.fancybox-buttons.js
+-rw-------    1 127617   4000         5503 Aug 15 16:27 jquery.fancybox-media.js
+-rw-------    1 127617   4000          789 Aug 15 16:27 jquery.fancybox-thumbs.css
+-rw-------    1 127617   4000         3997 Aug 15 16:27 jquery.fancybox-thumbs.js
+drwx------    3 127617   4000         2048 Mar 03  2017 source

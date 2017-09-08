@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CIPCE | Rensselaer Center for Initiatives in Pre-College Education</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1024">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="cipce.css">
+  <link rel="icon" href="icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<div id="top-separator">
+</div>
+<div id="top-container">
+  <a id="logo-link" href="index.html"><div id="logo-text"></div></a>
+  <img src="Home/Rensselaer.png" id="logo" >
+</div>
+</div>
+<div id="nav-wrapper">
+<nav class="navbar navbar-default container" id="nav-parent">
+    <ul class="nav navbar-nav">
+      <li class="active">
+      <li><a href="about.html">About</a></li> 
+      <li><a href="educators.html">Educators</a></li> 
+      <li><a id="active-nav" href="outreach.html">Outreach</a></li>
+      <li><a href="summer.html">Summer</a></li>
+      <li><a href="fll.html">FLL &amp; FRC</a></li>
+      <li><a target="_blank" href="http://www.cipce.rpi.edu/SA/scienceambassadors.html">Science Ambassadors</a></li>
+    </ul>
+</nav>
+</div>
+
+<div class="scroll-list">
+  <ul>
+    <li id="1">After-School Clubs</li>
+    <li id="2">Outreach Weekends</li>
+    <li id="3">Engineering Academies</li>
+  </ul>
+
+</div>
+<div class="color-fill">
+</div>
+<div class="header-wrapper">
+<div class="container scroll-header">
+<h2>Outreach</h2>
+<p>CIPCE partners with school districts, neighborhood youth organizations, schools of education and teachers throughout the Capital Region to place RPI student mentors into after school enrichment activities for students ages 8-14. Programs include Animation &amp; Gaming, LEGO® Robotics, <a href="fll.html">FIRST LEGO League® (FLL)</a> clubs and other technology initiatives.
+</p>
+</div>
+</div>
+<div class="container">
+  <div class="scroll-info" id="scroll-1">
+  <hr>
+  <h4>Afterschool Clubs and Organizations</h4>
+    <ul>
+      <li>Brittonkill Central School District</li>
+      <li>Cohoes Middle School</li>
+      <li>City School District of Albany</li>
+      <li>Girls Inc. Albany</li>
+      <li>Trinity Alliance</li>
+    </ul>
+ 
+  </div>
+ <div class="scroll-info" id="scroll-2">
+    <hr>
+    <h4>Outreach Weekends</h4>
+    <p>Thanks to outreach efforts sponsored by various departments on RPI
+    campus, CIPCE mentors participate in a variety of <strong>spring outreach 
+    weekends</strong> designed to inspire visiting elementary, middle School and high
+    school students to consider STEM fields.
+    </p>
+
+    <ul>
+      <li><a href="https://www.rpi.edu/dept/diversity/bftad/index.html">Black Family Technology Awareness Day</a></li>
+      <li><a href="http://eng.rpi.edu/eed">Exploring Engineering Day</a></li>
+      <li><a href="http://eng.rpi.edu/dyfd">Design Your Future Day</a></li>
+      <li><a href="http://doso.rpi.edu/update.do?catcenterkey=88">STEP &amp; Harlem Academy program as part of the Dean of Students Office Pre-College Initiatives</a></li>
+    </ul>
+
+ </div>
+
+  <div class="scroll-info" id="scroll-3">
+    <hr>
+    <h4>Engineering Academies</h4>
+    <p>Our <strong>Summer Engineering Academies</strong>, both on and off campus, include programs such as
+    Animation &amp; Gaming with Scratch, Arduino, JrLEGO® Robotics, LEGO® NXT, Advanced LEGO® NXT and
+    VEX Robotics. Participants design, plan, construct and reconstruct in a project-based,
+    student-centered learning environment that fosters inquiry, innovation and critical thinking.
+    </p>
+    
+
+    <p>Visit Summer.rpi.edu and click on <a href="http://summer.rpi.edu/">Summer Enrichment Programs</a>.</p>
+
+   
+  </div>
+
+</div>
+</div>
+
+<div class="footer container">
+  <div id="left-footer">
+    J Building Peoples Ave Complex J (PACJ), J 4205
+    <br>
+    Telephone: 518-276-6906
+    <br>
+    Email: cipce@rpi.edu
+  </div>
+  <div id="copyright">
+    School of Science, Rensselaer Polytechnic Institute 
+    <br>
+    Copyright © 2017 Rensselaer Polytechnic Institute (RPI)
+    <br>
+    Why not change the world?® is a registered trademark of Rensselaer Polytechnic Institute
+    </div>
+  <div id="right-footer">
+    Center for Initiatives in Pre-College Education
+    <br>
+    Rensselaer Polytechnic Institute
+    <br>
+    110 8th Street, Troy, New York 12180
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      
+      $('li').click(function() {
+        var ID = '#scroll-' + $(this).attr('id');
+        $('html, body').animate({scrollTop: $(ID).offset().top}, 400);
+      });
+      
+      $('li').mouseenter(function() {
+        $(this).css('font-weight', '700');
+      });
+
+      $('li').mouseout(function() {
+        $(this).css('font-weight', '400');
+      }); 
+
+
+    });
+</script>
+
+
+</body>
+</html>
