@@ -5,7 +5,6 @@ nav.navbar > .container-fluid >  ul.nav > li > a:hover{
 body {
 	height: 100vh;
 	font-family: Source Sans Pro, sans-serif;
-	text-decoration: none;
 }
 
 nav.navbar {
@@ -30,7 +29,7 @@ a.thumbnail {
 
 
 a, a:link, a:hover {
-	color: #2f4f4f;
+	color: #ff7f7f;
 	font-weight: 700;
 }
 
