@@ -354,6 +354,7 @@ ul.nav{
 
 .active-program {
 	background-color: #ff7f7f;
+        color: white;
 	padding-bottom: auto;
 }
 
