@@ -264,8 +264,9 @@
    	$(document).ready(function(){
   		$('.overlay').click(function() {
   			var ID = '#' + $(this).attr('id').replace('btn', '');
-  			$(ID).css('display', 'block');
+            $(ID).css('display', 'block');
   			$(ID).siblings('.project-info').css('display', 'none');
+            $('html, body').animate({scrollTop: $(ID).offset().top}, 400);
 		});
   	});
 	</script>
