@@ -26,6 +26,7 @@
       <li class="active">
       <li><a href="about.html">About</a></li> 
       <li><a href="educators.html">Educators</a></li> 
+      <li><a href="modules.html">Robotics Teaching Modules</a></li>
       <li><a href="outreach.html">Outreach</a></li>
       <li><a id="active-nav" href="summer.html">Summer</a></li>
       <li><a href="fll.html">FLL &amp; FRC</a></li>
@@ -112,7 +113,16 @@
 	  		 <p>
 	        <h3><strong>Animation and Gaming Academy</strong></h3>
 	        <br>
-          <a target="_blank" href="https://drive.google.com/open?id=1EnlqyArvSC5lUVxVjS4THJwrCJROr01H"><div class="program-link active-program">More Info</div></a>
+          <div class="dropdown">
+            <button id="AGbutton" onclick="showDropButtons('agmenu')" class="drop-btn">Select Course ▼</button>
+              <div id="agmenu" class="drop-content">
+                <button onclick="changeInfo('AGclifton')" class="drop-btn">Clifton Park Course</button>
+                <button onclick="changeInfo('AGrpi')" class="drop-btn">Summer At RPI Course</button>
+              </div>
+          </div>
+          <div id="AG1" class="program-info">Date</div>
+          <div class="program-info"><a id="AG2" target="_blank">Link to Flyer</a></div>
+          <br>
           <br>
 	        <strong>Who</strong>
 	        <br>
@@ -136,8 +146,17 @@
 	  	<div class="project">
 	  	  <p>
 	      <h3><strong>JR LEGO&reg; EV3</strong></h3>
-	      <br>
-        <a target="_blank" href="https://drive.google.com/open?id=1VWC7GbXc-Zbd-JLaWkCMxJ_GXiAT0lyc"><div class="program-link active-program">More Info</div></a>
+        <br>
+        <div class="dropdown">
+          <button id="JRLbutton" onclick="showDropButtons('jrlmenu')" class="drop-btn">Select Course ▼</button>
+            <div id="jrlmenu" class="drop-content">
+              <button onclick="changeInfo('JRLclifton')" class="drop-btn">Clifton Park Course</button>
+              <button onclick="changeInfo('JRLrpi')" class="drop-btn">Summer At RPI Course</button>
+            </div>
+        </div>
+        <div id="JRL1" class="program-info">Date</div>
+        <div class="program-info"><a id="JRL2" target="_blank">Link to Flyer</a></div>
+        <br>
         <br>
 	      <strong>Who</strong>
 	      <br>
@@ -147,8 +166,10 @@
 	      <strong>Description</strong>
 	      <br>
 	      Expand your creative interest in LEGO&reg; building elements and learn technical fundamentals of programming and construction!
-	      <strong>What you will Learn</strong>
-	      <br>
+        <br>
+        <br>
+        <strong>What you will Learn</strong>
+        <br>
 	      Expand your creative interest in LEGO&reg; building elements while peaking <b>your</b> technological curiosity. 
 	      Instructors will introduce the fundamentals of strong construction and programming, while also allowing for students to learn through experimentation and gentle guidance. 
 	      The students’ experience will culminate in a final challenge that integrates complex building skills and basic programming. 
@@ -165,8 +186,17 @@
   	 	<div class="project">
 	  		<p>
 	        <h3><strong>LEGO&reg; EV3</strong></h3>
-	        <br>
-          <a target="_blank" href="https://drive.google.com/open?id=0B3F-Y_5h4NFFSm1kZl9scWYxNnc"><div class="program-link active-program">More Info</div></a>
+          <br>
+          <div class="dropdown">
+            <button id="EV3button" onclick="showDropButtons('ev3menu')" class="drop-btn">Select Course ▼</button>
+              <div id="ev3menu" class="drop-content">
+                <button onclick="changeInfo('EV3rpi')" class="drop-btn">Summer At RPI Course</button>
+                <button onclick="changeInfo('EV3shen')" class="drop-btn">Shenendehowa Course</button>
+              </div>
+          </div>
+          <div id="EV31" class="program-info">Date</div>
+          <div class="program-info"><a id="EV32" target="_blank">Link to Flyer</a></div>
+          <br>
           <br>
 	        <strong>Who</strong>
 	        <br>
@@ -295,5 +325,66 @@
 </div>
 </div>
 </div>
+
+<script>
+/* Dropdown menu script */
+
+var AGclifton = ["Clifton Park Course ▼", "July 23-27", "https://drive.google.com/open?id=1EnlqyArvSC5lUVxVjS4THJwrCJROr01H"];
+var AGrpi = ["RPI Course ▼", "July 9-13 or July 16-20", "https://drive.google.com/open?id=1KZ6fpkC3CYHBeeKtkVU2cSV5tXQlsIKd"];
+var JRLclifton = ["Clifton Park Course ▼", "July 16-20", "https://drive.google.com/open?id=1VWC7GbXc-Zbd-JLaWkCMxJ_GXiAT0lyc"];
+var JRLrpi = ["RPI Course ▼", "July 9-13 or July 16-20", "https://drive.google.com/open?id=1qRXgNb_lMd1bcFU6HVlo-68xN298vNT_"];
+var EV3rpi = ["RPI Course ▼", "July 23-27", "https://drive.google.com/open?id=1SmKYQzLRKeIBSDrFl6GzWmmv-cOtfL5s"];
+var EV3shen = ["Shenendehowa Course ▼", "July 30 - Aug 3", "https://drive.google.com/open?id=0B3F-Y_5h4NFFSm1kZl9scWYxNnc"];
+
+/* Toggle button display */
+function showDropButtons(id) {
+  document.getElementById(id).classList.toggle("show");
+}
+
+/* Hide menu*/
+function hideMenu() {
+    var dropdowns = document.getElementsByClassName("drop-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var element = dropdowns[i];
+      if (element.classList.contains("show"))
+        element.classList.remove("show");
+    }  
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches(".drop-btn")) {
+    hideMenu();
+  }
+}
+
+/* Changes main button and information based on program and location */
+function changeInfo(program) {
+  var text = "";
+  var arr = [];
+  switch(program) {
+    case "AGclifton": text = "AG", arr = AGclifton;
+      break;
+    case "AGrpi": text = "AG", arr = AGrpi;
+      break;
+    case "JRLclifton": text = "JRL", arr = JRLclifton;
+      break;
+    case "JRLrpi": text = "JRL", arr = JRLrpi;
+      break;
+    case "EV3rpi": text = "EV3", arr = EV3rpi;
+      break;
+    case "EV3shen": text = "EV3", arr = EV3shen;
+      break;
+  }
+  document.getElementById(text + "button").innerText = arr[0];
+  document.getElementById(text + "1").innerText = arr[1];
+  document.getElementById(text + "2").innerText = "More Info";
+  document.getElementById(text + "2").href = arr[2];
+  document.getElementById(text + "2").style.color = "#ff4c4c";
+  document.getElementById(text + "2").style.fontWeight = "600";
+  hideMenu();
+}
+
+</script>
+
 </body>
 </html>
