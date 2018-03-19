@@ -394,7 +394,7 @@ ul.nav{
 .dropdown {
 	position: relative;
 	display: inline-block;
-	width: 18%;
+	width: 22%;
 	height: 100%;
 }
 
@@ -425,7 +425,7 @@ ul.nav{
 .program-info {
 	border-style: solid;
 	border-width: 1px;
-	width: 18%;
+	width: 22%;
 	height: 100%;
 	font-size: 1.3em;
 	text-align: center;
